@@ -1,122 +1,52 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Shiv Consultancy</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-
-body {margin:0; font-family:Poppins, Arial; background:#f5f8ff;}
-
-header {
-background: linear-gradient(90deg,#0A58CA,#0d6efd);
-color:white;
-padding:20px;
-text-align:center;
-}
-
-.hero {
-padding:60px;
-text-align:center;
-background:url('https://images.unsplash.com/photo-1560518883-ce09059eeffa') no-repeat center/cover;
-color:white;
-}
-
-.btn {
-padding:12px 25px;
-margin:10px;
-border:none;
-background:#0A58CA;
-color:white;
-border-radius:5px;
-}
-
-.section {
-padding:40px 20px;
-text-align:center;
-}
-
-.services {
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.card {
-background:white;
-margin:10px;
-padding:20px;
-width:260px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-
-img {width:100%; border-radius:10px;}
-
-footer {
-background:#222;
-color:white;
-text-align:center;
-padding:15px;
-}
-
-.whatsapp {
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px;
-border-radius:50%;
-text-decoration:none;
-}
-
-</style>
-</head>
-
-<body>
-
-<header>
-<h1>Shiv Consultancy</h1>
-<p>All Loan Solutions Under One Roof</p>
-<p>📞 6352240447</p>
-</header>
-
+<!-- HERO SECTION UPGRADE -->
 <div class="hero">
-<h1>Fast & Trusted Loan Services</h1>
-<p>Home | MSME | Business | Solar Loan</p>
-<button class="btn" onclick="window.location.href='tel:6352240447'">Call Now</button>
+<h1>Shiv Consultancy</h1>
+<h2>All Loan Solutions Under One Roof</h2>
+<p>Home Loan | MSME | Business | Solar | Agriculture</p>
+
+<button class="btn" onclick="window.location.href='tel:6352240447'">📞 Call Now</button>
+<button class="btn" onclick="window.location.href='https://wa.me/916352240447?text=Hello%20I%20want%20loan%20info'">💬 WhatsApp</button>
 </div>
 
+<!-- TRUST SECTION -->
+<div class="section" style="background:#eef3ff;">
+<h2>Why Choose Shiv Consultancy?</h2>
+<p>✔ Fast Loan Approval</p>
+<p>✔ All Banks & NBFC Tie-up</p>
+<p>✔ Minimum Documentation</p>
+<p>✔ Best Interest Rates</p>
+<p>✔ Trusted by Many Clients</p>
+</div>
+
+<!-- FULL SERVICES DETAILS -->
 <div class="section">
-<h2>Our Loan Services</h2>
+<h2>Loan Services Details</h2>
 
-<div class="services">
+<h3>🏠 Home Loan</h3>
+<p>Interest: 8.5% onwards | Tenure: 30 years<br>
+Documents: Aadhaar, PAN, Income Proof</p>
 
-<div class="card"><h3>Home Loan</h3><p>Rate: 8.5% onwards<br>Easy EMI & long tenure.</p></div>
+<h3>🏦 MSME Loan</h3>
+<p>Interest: 9%-14% | Subsidy Available<br>
+Documents: GST, ITR, Bank Statement</p>
 
-<div class="card"><h3>Business Loan</h3><p>Rate: 10% onwards<br>Flexible funding.</p></div>
+<h3>☀️ Solar Loan</h3>
+<p>Interest: 7%-12% | Govt Subsidy Available</p>
 
-<div class="card"><h3>MSME Loan</h3><p>Subsidy available<br>Quick approval.</p></div>
-
-<div class="card"><h3>Solar Loan</h3><p>7%-12% interest<br>Gov subsidy.</p></div>
-
-<div class="card"><h3>Agriculture Loan</h3><p>Support for farmers.</p></div>
-
-<div class="card"><h3>Vehicle Loan</h3><p>Car & commercial loans.</p></div>
+<h3>🌾 Agriculture Loan</h3>
+<p>Crop & Equipment loan available</p>
 
 </div>
-</div>
 
-<!-- EMI Calculator -->
+<!-- EMI CALCULATOR ADD -->
 <div class="section" style="background:#eef3ff;">
 <h2>EMI Calculator</h2>
 
 <input type="number" id="amount" placeholder="Loan Amount"><br><br>
-<input type="number" id="rate" placeholder="Interest Rate (%)"><br><br>
+<input type="number" id="rate" placeholder="Interest Rate"><br><br>
 <input type="number" id="months" placeholder="Months"><br><br>
 
-<button onclick="calcEMI()" class="btn">Calculate</button>
+<button onclick="calcEMI()">Calculate EMI</button>
 
 <h3 id="emi"></h3>
 </div>
@@ -131,21 +61,5 @@ var EMI=(P*R*Math.pow(1+R,N))/(Math.pow(1+R,N)-1);
 
 document.getElementById("emi").innerHTML="EMI: ₹ "+EMI.toFixed(2);
 }
-</script>
-
-<div class="section">
-<h2>Contact Us</h2>
-<p>📍 Opp. ST Bus Stand Chowk, Upleta</p>
-<p>📞 6352240447</p>
-
-<iframe src="https://maps.google.com/maps?q=Upleta&output=embed" width="100%" height="250"></iframe>
-</div>
-
-<footer>
-<p>Shiv Consultancy © 2026</p>
-</footer>
-
-<a href="https://wa.me/916352240447?text=Hello%20I%20want%20loan%20info" class="whatsapp">💬</a>
-
-</body>
-</html>
+</script><p>📞 6352240447</p>
+<p>📍 Upleta - Opp ST Bus Stand</p>
