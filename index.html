@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shiv Consultancy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {margin:0; font-family:Arial; background:#f5f8ff;}
+
+header {background:#0A58CA; color:white; padding:20px; text-align:center;}
+
+.hero {padding:50px; text-align:center; background:#eef3ff;}
+
+.btn {padding:10px 20px; background:#0A58CA; color:white; border:none;}
+
+.section {padding:30px; text-align:center;}
+
+footer {background:#222; color:white; padding:15px; text-align:center;}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Shiv Consultancy</h1>
+<p>All Loan Solutions Under One Roof</p>
+<p>📞 6352240447</p>
+</header>
+
+<div class="hero">
+<h2>Fast & Trusted Loan Services</h2>
+<button class="btn" onclick="window.location.href='tel:6352240447'">Call Now</button>
+</div>
+
+<div class="section">
+<h2>Loan Services</h2>
+
+<p>🏠 Home Loan - 8.5% onwards</p>
+<p>🏦 MSME Loan - Subsidy Available</p>
+<p>☀️ Solar Loan - Govt Support</p>
+<p>🌾 Agriculture Loan</p>
+
+</div>
+
+<div class="section">
+<h2>EMI Calculator</h2>
+
+<input id="a" placeholder="Amount"><br><br>
+<input id="r" placeholder="Rate"><br><br>
+<input id="n" placeholder="Months"><br><br>
+
+<button onclick="e()">Calculate</button>
+
+<h3 id="res"></h3>
+
+</div>
+
+<script>
+function e(){
+var P=a.value;
+var R=r.value/12/100;
+var N=n.value;
+
+var EMI=(P*R*Math.pow(1+R,N))/(Math.pow(1+R,N)-1);
+
+res.innerHTML="EMI: ₹ "+EMI.toFixed(2);
+}
+</script>
+
+<footer>
+<p>📞 6352240447</p>
+<p>📍 Upleta</p>
+</footer>
+
+</body>
+</html>
